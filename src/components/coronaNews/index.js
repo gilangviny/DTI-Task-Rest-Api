@@ -21,7 +21,7 @@ const CoronaNews = () => {
     });
   }, []);
 
-  console.log(posts);
+  // console.log(posts);
   // Get Current Posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
