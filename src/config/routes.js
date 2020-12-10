@@ -1,10 +1,11 @@
 import {
   Home,
-  Profile,
-  Contact,
+  // Profile,
+  // Contact,
   Login,
   ProfileId,
   InfoCorona,
+  Product,
   // DetailDate,
 } from '../pages';
 
@@ -14,15 +15,15 @@ const routes = [
     component: ProfileId,
     isPublic: false,
   },
+  // {
+  //   path: '/profile',
+  //   component: Profile,
+  //   isPublic: false,
+  // },
   {
-    path: '/profile',
-    component: Profile,
+    path: '/product',
+    component: Product,
     isPublic: false,
-  },
-  {
-    path: '/contact',
-    component: Contact,
-    isPublic: true,
   },
   {
     path: '/home',

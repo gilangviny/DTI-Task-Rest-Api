@@ -18,6 +18,7 @@ const Login = () => {
         // const cookieUser = res.data.user;
         // setCookie('userData', JSON.stringify(cookieUser), 10000);
         setCookie('token', JSON.stringify(cookieToken), 10000);
+        window.location.replace('/product');
       })
       .catch((err) => {
         console.log(err);
@@ -77,7 +78,7 @@ const Login = () => {
             <button
               type="submit"
               value="submit"
-              className="btn btn-primary btn-block mt-3 mb-2"
+              className="btn btn-primary btn-block mt-2 mb-2"
               disabled={isLoginLoading}
             >
               Sign in

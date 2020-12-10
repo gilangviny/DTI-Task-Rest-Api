@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getCookie, setCookie } from '../utils/cookie';
 
 function getTokenAuth() {
-  if (getCookie('token') !== '' && getCookie('userData') !== '') {
+  if (getCookie('token')) {
     return JSON.parse(getCookie('token'));
   }
   return '';
