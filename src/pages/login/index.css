@@ -1,0 +1,13 @@
+.global-container{
+	height:93.4vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#DDF8D6 ;
+}
+.login-form{ 
+	width:330px;
+  margin:20px;
+  height: 400px;
+  border-radius: 20px !important;
+}
