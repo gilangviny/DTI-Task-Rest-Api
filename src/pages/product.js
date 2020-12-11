@@ -7,7 +7,7 @@ import './product.css';
 const Product = () => {
   const [dataProduct, setDataProduct] = useState([]);
   // const [searchKey, setSearchKey] = useState('');
-  // const [activePage, setActivePage] = useState(1);
+  const [activePage, setActivePage] = useState(1);
   const [limit, setLimit] = useState(10);
   const [offset, setOffset] = useState(0);
   const [searchKey, setSearchKey] = useState('');
@@ -63,9 +63,6 @@ const Product = () => {
         activeClassName="active"
       />
     </div>
-    // <div>
-    //   <h1>haii</h1>
-    // </div>
   );
 };
 
