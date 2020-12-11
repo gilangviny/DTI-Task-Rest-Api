@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-plusplus */
 import React from 'react';
 
@@ -18,7 +19,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
                 onClick={() => {
                   return paginate(number);
                 }}
-                href="!#"
+                href="#"
                 className="page-link"
               >
                 {number}

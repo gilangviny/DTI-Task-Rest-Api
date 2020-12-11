@@ -17,9 +17,15 @@ const Posts = ({ posts, loading }) => {
                 return (
                   <li key={postActivity.id}>
                     <h6>{postActivity.title}</h6>
-                    <ul>
-                      <li>{postActivity.desc}</li>
-                    </ul>
+                    {postActivity.desc ? (
+                      <ul id="desc">
+                        <li>{postActivity.desc}</li>
+                      </ul>
+                    ) : (
+                      <ul>
+                        <li>Not Found </li>
+                      </ul>
+                    )}
                   </li>
                 );
               })}
