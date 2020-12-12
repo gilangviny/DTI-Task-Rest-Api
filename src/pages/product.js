@@ -35,6 +35,9 @@ const Product = () => {
         <li>{data.name}</li>
         <ul key={data.id}>
           <li>{data.variants[0].slug}</li>
+          <ul key={data.id}>
+            <li>{data.normal_price}</li>
+          </ul>
         </ul>
       </ul>
     );
